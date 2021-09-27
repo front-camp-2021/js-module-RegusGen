@@ -1,0 +1,108 @@
+* {
+    font-family: Montserrat, serif;
+    font-style: normal;
+}
+
+.frame-big {
+    max-width: 400px;
+    margin: 1%;
+}
+
+.frame {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  334px 31px 38px 38px 45px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.image {
+    text-align: center;
+    align-self: center;
+}
+
+.grade_price {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grade {
+    display: grid;
+    width: 33%;
+    height: 30px;
+    background: #6F64F8;
+    border-radius: 3px;
+    margin-left: 6%;
+}
+
+.grade_numbers {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    grid-template-columns: 45% 20%;
+}
+
+.price {
+    display: grid;
+    align-items: center;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2C2C2C;
+    text-align: end;
+    padding-right: 6%;
+    justify-content: flex-end;
+}
+
+.name {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2C2C2C;
+    padding-left: 3%;
+    align-self: end;
+}
+
+.note {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2C2C2C;
+    padding-left: 3%;
+}
+
+.button_wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+}
+
+.button_wishlist {
+    color: #2C2C2C;
+    background: #EDEDED;
+    border-radius: 0 0 0 8px;
+    grid-template-columns: 1px 100px;
+}
+
+.button_cart {
+    color: #FFFFFF;
+    background: #6F64F8;
+    border-radius: 0 0 8px 0;
+    grid-template-columns: 35px 100px;
+}
+
+.align_center {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
