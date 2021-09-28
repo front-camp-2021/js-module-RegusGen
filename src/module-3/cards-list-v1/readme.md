@@ -3,7 +3,7 @@
 Необхідно реалізувати CardsList компонент, 
 який буде відповідати за відображення списку карточок товарів.
 
-![preview](preview.png)
+![preview](src/module-3/cards-list-v1/preview.png)
 
 На вхід компонент має приймати об'єкт аргументів виду:
 
@@ -36,3 +36,7 @@
 
 В комопненті треба передбачити метод `update`, який буде приймати, так само як
 `constructor`, масив об'єктів і оновлювати відображення товарів. 
+
+## Mockup
+
+<https://www.figma.com/file/IhXnvrCvkLAtJYOs7aFx4N/vuesax-ecommerce-page-grid-light>

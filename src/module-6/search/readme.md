@@ -3,7 +3,7 @@
 Необхідно реалізувати Search компонент,
 який буде відповідати за пошук товарів.
 
-![preview](preview.png)
+![preview](src/module-6/search/preview.png)
 
 ## Події компонента
 

@@ -1,4 +1,4 @@
-import { debounce } from '../../module-1/debounce/index.js';
+import { debounce } from '../../../../js-module-master/src/module-1/debounce';
 
 export default class Search {
 

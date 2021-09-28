@@ -3,7 +3,7 @@
 Необхідно реалізувати FiltersList компонент який буде відповідати за відображення фільтрів 
 для списку товарів.
 
-![preview](preview.png)
+![preview](src/module-4/filters-list/preview.png)
 
 На вхід компонент має приймати об'єкт аргументів виду:
 
@@ -40,3 +40,7 @@
 
 При активації фільтру, компонент повинен зробити `dispatch` події `add-filter`,
 а при деактивації фільтру - події `remove-filter` зі значенням `value`
+
+## Mockup
+
+<https://www.figma.com/file/IhXnvrCvkLAtJYOs7aFx4N/vuesax-ecommerce-page-grid-light>
