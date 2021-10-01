@@ -1,6 +1,8 @@
-import Card from '../../../../js-module-master/src/module-2/card';
+// import Card from '../../../../js-module-master/src/module-2/card';
+import Card from '../../../src/module-2/card/index.js';
 import CardsList from './index.js';
-import { products } from '../../../../js-module-master/src/fixtures/products.js';
+// import { products } from '../../../../js-module-master/src/fixtures/products.js';
+import { products } from '../../fixtures/products';
 
 describe('CardsList', () => {
   let cardsList;

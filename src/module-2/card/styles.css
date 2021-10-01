@@ -97,7 +97,7 @@
     color: #FFFFFF;
     background: #6F64F8;
     border-radius: 0 0 8px 0;
-    grid-template-columns: 35px 100px;
+    grid-template-columns: 35px 111px;
 }
 
 .align_center {
@@ -105,4 +105,17 @@
     place-items: center;
     justify-content: center;
     align-items: center;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 486px 486px;
+    grid-gap: 28px;
+    background: #F9F9F9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.0778245);
+    max-width: 1256px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
 }
