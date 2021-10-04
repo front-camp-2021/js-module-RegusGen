@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="style_components.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 
 <body>
@@ -13,6 +15,7 @@
   </div>
 
   <script type="module">
+
     import FiltersList from './index.js';
 
     const list = [
@@ -34,12 +37,19 @@
 
     root.append(filtersList.element);
 
-    reset.addEventListener('pointerdown', () => {
+    let reset = document.querySelector('button');
+    reset.addEventListener('click', () => {
       filtersList.reset();
     });
 
     filtersList.element.addEventListener('change', event => {
-      console.error('event', event.target.value);
+      console.log('event', event.target.checked);
+      if (event.target.checked) {
+        filtersList.addFilter(event.target.id);
+      } else {
+        filtersList.removeFilter(event.target.id);
+      }
+
     });
   </script>
 </body>
