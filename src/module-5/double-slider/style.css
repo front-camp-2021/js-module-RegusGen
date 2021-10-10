@@ -76,3 +76,7 @@
 .range-slider > span:last-child {
   right: 0;
 }
+
+.filter-name {
+  padding-bottom: 40px;
+}

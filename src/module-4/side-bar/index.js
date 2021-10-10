@@ -54,18 +54,6 @@ export default class SideBar {
                         <div id="dbl"></div>
                         <div id="dblRating"></div>
                         
-<!--                        <div class="values">-->
-<!--                            <span id="range1">-->
-<!--                                0-->
-<!--                            </span>-->
-<!--                            <span>&dash;</span>-->
-<!--                            <span id="range2">-->
-<!--                                50000-->
-<!--                            </span>-->
-<!--                        </div>-->
-<!--                        <div class="slider-track"></div>-->
-<!--                        <input type="range" min="0" max="100000" value="30000" id="slider-1">-->
-<!--                        <input type="range" min="0" max="100000" value="50000" id="slider-2">-->
                     </div>
                     <div class="line">
                         <svg width="378" height="1" viewBox="0 0 378 1" fill="none" xmlns="http://www.w3.org/2000/svg">
