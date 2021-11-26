@@ -44,7 +44,7 @@ export default class Card {
                     <div class="price">${this.price}</div>
                 </div>
                 <div class="name">${this.title}</div> 
-                <div class="note">${this.category}  >>  ${this.brand}</div>
+                
                 <div class="button_wrapper">
                     <button class="button button_wishlist align_center">
                         <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">

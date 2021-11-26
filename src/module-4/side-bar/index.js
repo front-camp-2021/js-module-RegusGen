@@ -32,7 +32,7 @@ export default class SideBar {
   }
 
   get template() {
-    return `<div class="main">
+    return `
               <div class="main__left">
                 <div class="main__left-filter">
                     <p class="textFilter set-font">Filters</p>
@@ -73,10 +73,10 @@ export default class SideBar {
                     
                 </div>
                 <div class="main__left-button">
-                    <button class="buttonClear set-font center_items">CLEAR ALL FILTERS</button>
+                    <button id="clear" class="buttonClear set-font center_items">CLEAR ALL FILTERS</button>
                 </div>
             </div>
-        </div>`
+        `
   }
 
   render() {

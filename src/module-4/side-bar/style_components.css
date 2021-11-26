@@ -43,7 +43,7 @@ body {
 .header__menu {
     height: 49px;
     display: grid;
-    grid-template-columns: 2.5% 0.5% 0.5% 7% 0.5% 0.5% 11%;
+    grid-template-columns: 2.5% 0.5% 0.5% 7% 0.5% 0.5% 6%;
     margin-left: 0.8%;
 }
 
@@ -70,7 +70,7 @@ body {
 
 .main__left {
     display: grid;
-    grid-template-rows: 72px 1523px 84px;
+    grid-template-rows: 72px 1505px 84px;
 }
 
 .main__left-filter {
@@ -115,23 +115,11 @@ body {
     font-size: 16px;
     line-height: 32px;
     color: #2C2C2C;
-    padding: 8% 8% 0 8%;
+    padding: 4% 2% 0 8%;
     width: 100%;
     /*border: black 1px solid;*/
     position: relative;
-}
-
-input[type='range'] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /*width: 560px;*/
-    position: relative;
-    margin-left: 11%;
-    top: 38%;
-    bottom: 0;
-    /*pointer-events: none;*/
-    background-color: transparent;
+    margin-bottom: 8%;
 }
 
 .slider-track {
@@ -144,44 +132,7 @@ input[type='range'] {
     border-radius: 5px;
     background-color: #EDEDED;
 }
-input[type="range"]::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    height: 5px;
-}
-input[type="range"]::-moz-range-track {
-    -webkit-appearance: none;
-    height: 5px;
-}
-input[type="range"]::-ms-track {
-    -webkit-appearance: none;
-    height: 5px;
-}
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 1.2em;
-    width: 1.2em;
-    background-color: #6F64F8;
-    cursor: pointer;
-    border-radius: 2px;
-    pointer-events: auto;
-}
-input[type="range"]::-moz-range-thumb {
-    -webkit-appearance: none;
-    height: 1.2em;
-    width: 1.2em;
-    background-color: #6F64F8;
-    cursor: pointer;
-    border-radius: 2px;
-}
-input[type="range"]::-ms-thumb {
-    -webkit-appearance: none;
-    height: 1.2em;
-    width: 1.2em;
-    background-color: #6F64F8;
-    cursor: pointer;
-    border-radius: 2px;
-    pointer-events: auto;
-}
+
 .values {
     background-color: #6F64F8;
     width: 55%;
@@ -240,6 +191,7 @@ input[type="range"]::-ms-thumb {
     color: #FFFFFF;
     height: 56px;
     border: none;
+    cursor: pointer;
 }
 
 .main__right {
@@ -270,7 +222,7 @@ input[type="range"]::-ms-thumb {
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: 486px 486px 486px;
-    grid-gap: 28px;
+    grid-gap: 1.5%;
     background: #F9F9F9;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.0778245);
     justify-content: center;
@@ -367,16 +319,17 @@ input[type="range"]::-ms-thumb {
 .pagination {
     border-radius: 20px;
     background: #EDEDED;
-    width: 358px;
+    width: max-content;
     height: 40px;
     text-align:center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .pagination a {
     float: left;
-    text-align:center;
-    padding: 7px 10px 8px 9px;
+    text-align: center;
+    padding: 7px 10px 8px 15px;
     text-decoration: none;
     font-weight: normal;
     font-size: 18px;
@@ -401,6 +354,8 @@ input[type="range"]::-ms-thumb {
     height: 40px;
     border-radius: 20px;
     margin-right: 17px;
+    border: none;
+    cursor: pointer;
 }
 
 .footer__pgnRight {
@@ -414,6 +369,16 @@ input[type="range"]::-ms-thumb {
     height: 40px;
     border-radius: 20px;
     margin-left: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 40px auto 40px;
+    margin-top: 30px;
 }
 
 

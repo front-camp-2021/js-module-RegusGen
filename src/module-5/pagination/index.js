@@ -4,7 +4,7 @@ export default class Pagination {
   pageIndex = 0;
 
   constructor({
-    totalPages = 10,
+    totalPages = 12,
     page = 1,
     currentPage = 1,
   } = {}) {
@@ -32,6 +32,27 @@ export default class Pagination {
     })
   }
 
+  updatePages() {
+    if (!this.totalPages) {
+      this.totalPages = 1
+    }
+    if (this.page < 1) {
+      this.page = 1
+    }
+    else if (this.page > this.totalPages) {
+      this.page = this.totalPages
+    }
+
+    let pages = '';
+    for (let i =0; i < this.totalPages; i++) {
+      pages += this.pageTemplate(i);
+    }
+    this.element.querySelector('.pagination').innerHTML = pages;
+
+    this.element.querySelector('.active').classList.remove('active');
+    this.element.querySelectorAll('a')[this.page - 1].classList.add('active');
+  }
+
   update() {
     if (this.page < 1) {
       this.page = 1
@@ -42,13 +63,10 @@ export default class Pagination {
     this.element.querySelector('.active').classList.remove('active');
     this.element.querySelectorAll('a')[this.page - 1].classList.add('active');
 
-    if (this.element) {
-      this.element.dispatchEvent(new CustomEvent('page-changed', {
-        detail: {
-          page: this.page
-        }
-      }));
-    }
+    const evt = new CustomEvent("filter-changed", {
+      bubbles: true
+    });
+    this.element.dispatchEvent(evt);
   }
 
   pageTemplate(index) {

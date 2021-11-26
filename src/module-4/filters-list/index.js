@@ -28,6 +28,10 @@ export default class FiltersList {
           return item.value === id
       })
       filter.checked = true;
+      const evt = new CustomEvent("filter-changed", {
+          bubbles: true
+      });
+      this.element.dispatchEvent(evt);
   }
 
   removeFilter(id) {
@@ -35,6 +39,10 @@ export default class FiltersList {
           return item.value === id
       })
       filter.checked = false;
+      const evt = new CustomEvent("filter-changed", {
+          bubbles: true
+      });
+      this.element.dispatchEvent(evt);
   }
 
   render() {
@@ -49,11 +57,17 @@ export default class FiltersList {
               checkbox.checked = false;
           }
       })
+
+      this.list.forEach((item) => item.checked = false)
+      const evtRange = new CustomEvent('filter-changed', {
+          bubbles: true
+      })
+      this.element.dispatchEvent(evtRange);
   }
 
   checkboxTemplate(item) {
       return `<input type="checkbox" id=${item.value} name="Category" ${item.checked ? "checked" : ""}>
-              <label htmlFor=${item.value}>${item.title}</label><br>`
+              <label for=${item.value}>${item.title}</label><br>`
   }
 
   remove() {

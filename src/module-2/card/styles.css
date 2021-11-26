@@ -4,14 +4,14 @@
 }
 
 .frame-big {
-    max-width: 400px;
-    margin: 1%;
+    max-width: 100%;
+    height: 486px;
 }
 
 .frame {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:  334px 31px 38px 38px 45px;
+    grid-template-rows:  334px 31px 76px 45px;
     background: #FFFFFF;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
     border-radius: 8px;
@@ -21,6 +21,11 @@
 .image {
     text-align: center;
     align-self: center;
+}
+
+.image img {
+    max-height: 300px;
+    max-width: 90%;
 }
 
 .grade_price {
@@ -63,7 +68,7 @@
     line-height: 19px;
     color: #2C2C2C;
     padding-left: 3%;
-    align-self: end;
+    align-self: center;
 }
 
 .note {
@@ -111,11 +116,11 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 486px 486px;
-    grid-gap: 28px;
+    grid-gap: 20px;
     background: #F9F9F9;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.0778245);
-    max-width: 1256px;
+    /*max-width: 1256px;*/
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    /*margin-left: 20px;*/
 }

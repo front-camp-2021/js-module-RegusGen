@@ -6,27 +6,18 @@ export default class CardsList {
     this.data = data;
     this.Component = Component;
 
-    // this.element = document.createElement('div');
-    // this.element.classList.add('grid_container');
     this.render();
     this.getSubElements();
-    this.update(data);
+    this.update(this.data);
   }
 
-  // render () {
-  //   this.data.forEach((product) => {
-  //     const card = new this.Component(product);
-  //     this.element.appendChild(card.element);
-  //   })
-  // }
 
   get template () {
     return `<div>
-        <h1>This is Cardlist component</h1>
-        <div class="grid_container" data-element="body"></div>
-</div>`
+<!--              <h1>This is Cardlist component</h1>-->
+              <div class="grid_container" data-element="body"></div>
+            </div>`
   }
-
 
   render () {
     const wrapper = document.createElement('div');

@@ -122,6 +122,10 @@ export default class DoubleSlider {
         }
       }));
     }
+    const evtRange = new CustomEvent('filter-changed', {
+      bubbles: true
+    })
+    this.element.dispatchEvent(evtRange);
   }
 
   render() {
