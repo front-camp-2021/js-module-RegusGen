@@ -3,7 +3,7 @@
 Необхідно реалізувати DoubleSlider компонент,
 який буде відповідати за фільтрацію списку товарів.
 
-![preview](preview.png)
+![preview](src/module-5/double-slider/preview.png)
 
 На вхід компонент має приймати об'єкт виду:
 

@@ -3,7 +3,7 @@
 Необхідно реалізувати SideBar компонент,
 який буде відповідати за відображення списку фільтрів.
 
-![preview](preview.png)
+![preview](src/module-4/side-bar/preview.png)
 
 На вхід компонент має приймати данні для ініціалізації фільтру по
 категоріям та фільтру по брендам.
@@ -37,3 +37,7 @@
 ## Події компонента
 
 При натисканні на кнопку "clear filters", компонент повинен зробити `dispatch` події `clear-filters`
+
+## Mockup
+
+<https://www.figma.com/file/IhXnvrCvkLAtJYOs7aFx4N/vuesax-ecommerce-page-grid-light>
